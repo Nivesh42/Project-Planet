@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+/* Navbar Starts */
+
+
+
+/* Navbar Starts */
+
+/* Home Section Starts */
+
+.homeplanet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    position: relative;
+
+}
+
+.marsimg {
+    z-index: 1;
+    width: 40%;
+}
+
+.marstitle {
+    position: absolute;
+    width: 15%
+}
+
+.marstitle.ma {
+    left: 21%;
+}
+
+.marstitle.rs {
+    right: 21%;
+}
+
+/* Home Section Starts */
