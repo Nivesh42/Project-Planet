@@ -4,7 +4,24 @@ body {
 
 /* Navbar Starts */
 
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0 3%;
+}
 
+.navContainer img {
+    width: 5rem;
+    object-fit: contain;
+    object-position: center;
+}
+
+.navContainer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
 
 /* Navbar Starts */
 
@@ -14,7 +31,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
     position: relative;
 
 }
@@ -38,3 +54,12 @@ body {
 }
 
 /* Home Section Starts */
+
+
+/* Utility */
+
+.homescreen {
+    max-width: 1440px; 
+    margin: auto;
+    margin-top: 5%;
+}
