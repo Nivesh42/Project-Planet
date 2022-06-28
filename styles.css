@@ -3,20 +3,32 @@
 body {
     background-color: black;
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 /* Navbar Starts */
+.navBar {
+    padding: 1.5rem 0;
+}
 
 .navContainer {
     display: flex;
     justify-content: space-between;
+    background-color: black;
     color: white;
     margin: 0 3%;
     position: relative;
+    z-index: 3;
 }
 
 .navFont {
     font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+.navFont li {
+    padding: 0.5rem;
 }
 
 .dropdown {
@@ -41,29 +53,32 @@ body {
 }
 
 
-.dropdowndiv {
-    background-color: rgba(212, 212, 212, 0.116);
+.dropdowndiv { 
+    visibility: hidden; /* hides sub-menu */
+    background-color:rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1.5rem;
-    text-align: center;
-    position: absolute;
-    right: 4.5rem;
-    z-index: 2;
-    border-radius: 10px; 
-    align-items: center;
+    width: fit-content;
     opacity: 0;
-}
+    position: absolute;
+    top: 100%;
+    right: 6.5rem;
+    transform: translateY(-1rem);
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    z-index: -1;
+  }
 
-@keyframes dropdown {
-    0% {
-        top: -25rem;}
-    100% {
-        top: 3.5rem;
-        opacity: 100;
-    }
-}
+  .navContainer:hover .dropdowndiv {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 2;
+    transform: translateY(1rem);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  }
 
 .dropdowndiv a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
@@ -71,11 +86,6 @@ body {
     width: 100%;
 }
 
-.dropdown:hover ~ .dropdowndiv {
-    top: 3.5rem;
-    opacity: 100;
-    animation: dropdown 3s;
-}
 
 
 /* Navbar Starts */
@@ -87,12 +97,24 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
 .marsimg {
     z-index: 1;
     width: 40%;
+    animation: marsAni 2s ease-in;
+    transition: all ease-in 3s, opacity ease-in 2s;
+}
+
+@keyframes marsAni {
+    0% {
+        transform: translateY(5rem) rotateZ(15deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateZ(0deg);
+        opacity: 1;
+    }
 }
 
 .marstitle {
@@ -107,6 +129,8 @@ body {
 .marstitle.rs {
     right: 21%;
 }
+
+
 
 /* Home Section Starts */
 
