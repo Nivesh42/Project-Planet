@@ -72,7 +72,7 @@ body {
     z-index: -1;
   }
 
-  .navContainer:hover .dropdowndiv {
+  .dropdown:hover ~ .dropdowndiv, .dropdowndiv:hover {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
     z-index: 2;
@@ -102,18 +102,18 @@ body {
 .marsimg {
     z-index: 1;
     width: 40%;
-    animation: marsAni 2s ease-in;
-    transition: all ease-in 3s, opacity ease-in 2s;
+    animation: marsAni 8s ease-in-out;
+    transition: all 4s ease-in, opacity 2s ease-in;
 }
 
 @keyframes marsAni {
     0% {
-        transform: translateY(5rem) rotateZ(15deg);
+        transform: translateY(5rem) rotateZ(15deg) scale(0.9);
         opacity: 0;
     }
     100% {
-        transform: translateY(0) rotateZ(0deg);
-        opacity: 1;
+        transform: translateY(0) rotateZ(0deg) scale(1);
+        opacity: 1; 
     }
 }
 
@@ -124,10 +124,39 @@ body {
 
 .marstitle.ma {
     left: 21%;
+    animation: maAni 5s ease-in-out;
+    transition: all ease-in 3s, opacity ease-in 0.5s;
 }
 
 .marstitle.rs {
     right: 21%;
+    animation: rsAni 5s ease-in-out;
+    transition: all ease-in 3s, opacity ease-in 0.5s;
+}
+
+@keyframes maAni {
+    0% {
+        transform: translateX(75%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rsAni {
+    0% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.xyz {
+    background-color:antiquewhite;
+    height: 300px;
+    width: 500px;
 }
 
 
