@@ -97,6 +97,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .marsimg {
@@ -169,5 +170,4 @@ body {
 .homescreen {
     max-width: 1440px; 
     margin: auto;
-    margin-top: 5%;
 }
