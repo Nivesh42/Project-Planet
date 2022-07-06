@@ -1,56 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planets</title>
-    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
+    <link type="text/css" rel="stylesheet" href="./carousel.css" />
 </head>
 <body>
     <section id="navBar" class="navBar">
-        <nav class="navContainer">
-            <img src="./Images/Logo.png" alt="Logo">
-            <ul class="navFont">
-                <li class="dropdown">Planets</li>
-                <div class="dropdowndiv">
-                    <a href="">
-                        <span>Mercury</span>
-                    </a>
-                    <a href="">
-                        <span>Venus</span>
-                    </a>
-                    <a href="">
-                        <span>Earth</span>
-                    </a>
-                    <a href="">
-                        <span>Mars</span>
-                    </a>
-                    <a href="">
-                        <span>Jupiter</span>
-                    </a>
-                    <a href="">
-                        <span>Saturn</span>
-                    </a>
-                    <a href="">
-                        <span>Uranus</span>
-                    </a>
-                    <a href="">
-                        <span>Neptune</span>
-                    </a>
-                </div>
-                <li class="navLink">
-                    <a href="">About</a>
-                </li>
-            </ul>    
-        </nav>
+      <nav class="navContainer">
+        <img src="./Images/Logo.png" alt="Logo" />
+        <ul class="navFont">
+          <li class="dropdown">Planets</li>
+          <div class="dropdowndiv">
+            <a href="">
+              <span>Mercury</span>
+            </a>
+            <a href="">
+              <span>Venus</span>
+            </a>
+            <a href="">
+              <span>Earth</span>
+            </a>
+            <a href="">
+              <span>Mars</span>
+            </a>
+            <a href="">
+              <span>Jupiter</span>
+            </a>
+            <a href="">
+              <span>Saturn</span>
+            </a>
+            <a href="">
+              <span>Uranus</span>
+            </a>
+            <a href="">
+              <span>Neptune</span>
+            </a>
+          </div>
+          <li class="navLink">
+            <a href="">About</a>
+          </li>
+        </ul>
+      </nav>
     </section>
     <section id="homescreen" class="homescreen">
-        <div class="homeplanet">
-            <img class="marstitle ma" src="./Images/MA.png" alt="MA">
-            <img class="marsimg" src="./Images/mars_round.png" alt="Mars">
-            <img class="marstitle rs" src="./Images/RS.png" alt="RS">
-        </div>    
+        <div class="carousel">
+            <button class="carousel__button cbtn--l">P</button>
+            <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide currSlide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/Mer.png" alt="Ear" />
+                        <img class="marsimg" src="./Images/Mercury.png" alt="Earth" />
+                        <img class="marstitle rs" src="./Images/Cury.png" alt="Th" />
+                    </div>
+                </li>
+                <li class="carousel__slide currSlide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/Ven.png" alt="Ear" />
+                        <img class="marsimg" src="./Images/Venus.png" alt="Earth" />
+                        <img class="marstitle rs" src="./Images/Us.png" alt="Th" />
+                    </div>
+                </li>
+                <li class="carousel__slide currSlide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/Ear.png" alt="Ear" />
+                        <img class="marsimg" src="./Images/Earth.png" alt="Earth" />
+                        <img class="marstitle rs" src="./Images/Th.png" alt="Th" />
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/MA.png" alt="MA" />
+                        <img class="marsimg" src="./Images/mars_round.png" alt="Mars" />
+                        <img class="marstitle rs" src="./Images/RS.png" alt="RS" />
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/Jupi.png" alt="MA" />
+                        <img class="marsimg" src="./Images/Jupiter.png" alt="Mars" />
+                        <img class="marstitle rs" src="./Images/Ter.png" alt="RS" />
+                    </div>
+                </li>
+                <li class="carousel__slide currSlide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/Sat.png" alt="Ear" />
+                        <img class="marsimg" src="./Images/Saturn.png" alt="Earth" />
+                        <img class="marstitle rs" src="./Images/Urn.png" alt="Th" />
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/Ura.png" alt="Ear" />
+                        <img class="marsimg" src="./Images/Uranus.png" alt="Earth" />
+                        <img class="marstitle rs" src="./Images/Nus.png" alt="Th" />
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="homeplanet">
+                        <img class="marstitle ma" src="./Images/Nept.png" alt="Ear" />
+                        <img class="marsimg" src="./Images/Neptune.png" alt="Earth" />
+                        <img class="marstitle rs" src="./Images/Tune.png" alt="Th" />
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <button class="carousel__button cbtn--r">N</button>
+            <div class="carousel__nav">
+            <button class="carousel__indicator currSlideBtn"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            </div>
+        </div>
     </section>
+    <script src="./carousel.js"></script>
 </body>
 </html>
