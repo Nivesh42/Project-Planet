@@ -100,14 +100,14 @@ body {
     width: 100%;
 }
 
-.marsimg {
+.P-img {
     z-index: 1;
     width: 40%;
-    animation: marsAni 8s ease-in-out;
+    animation: planetani 8s ease-in-out;
     transition: all 4s ease-in, opacity 2s ease-in;
 }
 
-@keyframes marsAni {
+@keyframes planetani {
     0% {
         transform: translateY(5rem) rotateZ(15deg) scale(0.9);
         opacity: 0;
@@ -118,26 +118,26 @@ body {
     }
 }
 
-.marstitle {
+.Ptitle {
     position: absolute;
-    width: 15%
+    width: 25%
 }
 
-.marstitle.ma {
-    left: 21%;
-    animation: maAni 5s ease-in-out;
+.Ptitle.left {
+    left: 11%;
+    animation: l-title 5s ease-in-out;
     transition: all ease-in 3s, opacity ease-in 0.5s;
 }
 
-.marstitle.rs {
-    right: 21%;
-    animation: rsAni 5s ease-in-out;
+.Ptitle.right {
+    right: 11%;
+    animation: r-title 5s ease-in-out;
     transition: all ease-in 3s, opacity ease-in 0.5s;
 }
 
-@keyframes maAni {
+@keyframes l-title {
     0% {
-        transform: translateX(75%);
+        transform: translateX(47%);
         opacity: 1;
     }
     100% {
@@ -146,9 +146,9 @@ body {
     }
 }
 
-@keyframes rsAni {
+@keyframes r-title {
     0% {
-        transform: translateX(-75%);
+        transform: translateX(-47%);
     }
     100% {
         transform: translateX(0);
